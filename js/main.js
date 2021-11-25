@@ -49,6 +49,9 @@ jQuery(document).ready(function($) {
             showSlide(diff); // show that slide
             e.preventDefault();
         });
+
+        $('nav a, .second-btn a').click(function(e) {
+        });
       
         $(window).resize(function(){
           // Keep current slide to left of window on resize
