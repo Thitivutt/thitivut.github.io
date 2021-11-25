@@ -41,8 +41,11 @@ jQuery(document).ready(function($) {
             e.preventDefault();
         }
         
-        $('nav a, .main-btn a').click(function(e) {
-           
+        $('nav a, .main-btn a').click(function(e) {           
+             // find how far it is from current slide
+             var diff = newslide - currSlide - 1;
+             showSlide(diff); // show that slide
+             e.preventDefault();           
         });
       
         $(window).resize(function(){
