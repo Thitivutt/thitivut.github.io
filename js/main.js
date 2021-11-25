@@ -51,6 +51,7 @@ jQuery(document).ready(function($) {
         });
 
         $('nav a, .second-btn a').click(function(e) {
+            alert($(this).attr('href'));
         });
       
         $(window).resize(function(){
